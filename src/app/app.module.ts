@@ -12,12 +12,18 @@ import { AppMaterialModule } from './app-material/app-material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PerfilComponent } from './perfil/perfil.component';
+import { RegistroComponent } from './registro/registro.component';
+import { ProductosComponent } from './productos/productos.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     BienvenidaComponent,
+    PerfilComponent,
+    RegistroComponent,
+    ProductosComponent,
   
     
     
