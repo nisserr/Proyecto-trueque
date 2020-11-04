@@ -1,0 +1,113 @@
+
+.producto1,.producto2 {
+    margin-top: 10%;
+  }
+  
+  .container-fluid {
+    background-image: url('http://avante.biz/wp-content/uploads/Wallpapers-gris-claro/Wallpapers-gris-claro2.jpg');
+  }
+  
+  .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      margin: auto;
+      text-align: center;
+      margin-right: 10px;
+    }
+    
+    .title {
+      color: grey;
+      font-size: 18px;
+    }
+    
+    button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+    
+    a {
+      text-decoration: none;
+      font-size: 22px;
+      color: black;
+    }
+    
+    button:hover, a:hover {
+      opacity: 0.7;
+    }
+  
+    /* Ensure proper sizing */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Column container */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    flex: 30%; /* Set the width of the sidebar */
+    
+    padding: 20px; /* Some padding */
+  }
+  
+  /* Main column */
+  .main {
+    flex: 70%; /* Set the width of the main content */
+  
+    padding: 20px; /* Some padding */
+  }
+  
+  @import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
+  
+  * {
+      margin:0;
+      padding:0;
+      font:12pt Arial;
+  }
+  
+  body {
+    background-color:#34495e;
+  }
+  
+  .field {
+    display:flex;
+    position:realtive;
+    
+    width:40%;
+  
+    box-shadow:
+     1px 1px 0 rgb(22, 160, 133),
+     2px 2px 0 rgb(22, 160, 133),
+  
+    ;
+  }
+  
+  .field>input[type=text],
+  .field>button {
+    display:block;
+    font:1.2em 'Montserrat Alternates';
+  }
+  
+  .field>input[type=text] {
+    flex:1;
+    padding:0.6em;
+    border:0.2em solid rgb(26, 188, 156);
+  }
+  
+  .field>button {
+     background-color:rgb(26, 188, 156);
+    color:white;
+    border:none;
+  }

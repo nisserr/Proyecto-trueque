@@ -1,0 +1,21 @@
+<h1 mat-dialog-title>Hola</h1>
+<div mat-dialog-content>
+  <p>Título Producto</p>
+  <mat-form-field>
+    <mat-label></mat-label>
+    <input matInput [(ngModel)]="data.correo">
+    
+  </mat-form-field>
+  <p>Descripción</p>
+  <mat-form-field>
+    <mat-label></mat-label>
+    <input matInput [(ngModel)]="data.rut">
+  </mat-form-field>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Mejor no</button>
+  
+  
+  <button mat-button [mat-dialog-close]="data.correo" cdkFocusInitial>Ok</button>
+</div>
