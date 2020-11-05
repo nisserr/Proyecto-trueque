@@ -1,11 +1,17 @@
 .container-fluid {
-    background-image: url('http://avante.biz/wp-content/uploads/Wallpapers-gris-claro/Wallpapers-gris-claro2.jpg');
-    background-size: cover;
-  }
-  
-    
-  
-  img{
-    width: 285px;
-    height: 250px;
-  }
+  background-image: url('http://avante.biz/wp-content/uploads/Wallpapers-gris-claro/Wallpapers-gris-claro2.jpg');
+  background-size: cover;
+}
+img{
+  width: 275px;
+  height: 230px;
+}
+.card{
+  width: 300px;
+  height: 450x;
+  margin-bottom: 50px;
+  margin-right: 25px;
+  margin-left: 5px;
+}
+
+

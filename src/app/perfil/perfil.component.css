@@ -1,4 +1,4 @@
-
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
 .producto1,.producto2 {
   margin-top: 10%;
 }
@@ -69,7 +69,7 @@
   padding: 20px; /* Some padding */
 }
 
-@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
+
 
 * {
     margin:0;
