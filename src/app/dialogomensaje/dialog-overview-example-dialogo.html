@@ -23,11 +23,19 @@
   </div>
 
   <div class="container">
+    <p>{{data.mensaje}}</p>
+  </div>
+
+  <div class="container">
     <br>
    <p>Escriba nuevo mensaje</p>
   <mat-form-field>
     <mat-label></mat-label>
-    <input matInput>
+    <input matInput [(ngModel)]="data.mensaje">
   </mat-form-field>
+</div>
+
+<div class="container">
+  <button type="submit"> Enviar</button>
 </div>
   

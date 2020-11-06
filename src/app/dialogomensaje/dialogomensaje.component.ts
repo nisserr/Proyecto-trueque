@@ -6,6 +6,7 @@ export interface DialogData {
   correo: string;
   name: string;
   rut: string;
+  mensaje: string;
 }
 
 /**
@@ -20,6 +21,7 @@ export class DialogomensajeComponent {
   correo: string;
   name: string;
   rut: string;
+  mensaje:string;
 
   constructor(public dialog: MatDialog) {}
 
@@ -37,7 +39,7 @@ export class DialogomensajeComponent {
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
-      this.correo = result;
+      this.mensaje = result;
     });
   }
   

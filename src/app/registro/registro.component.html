@@ -1,1 +1,95 @@
-<p>registro works!</p>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">ALMAJONI</h1>
+        <p class="lead">el mejor lugar para cambiar tus productos.</p>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="card">
+        <h5 class="card-header">REGISTRATE ES GRATIS</h5>
+        <div class="card-body">
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+                <label for="imputnombre">nombre</label>
+                <input type="text" id="nombre" placeholder="nombre" class="form-control" formControlName="name"
+                    [ngClass]="{ 'is-invalid': submitted && f.name.errors }">
+                <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                    <div *ngIf="f.name.errors.required">El nombre es requerido</div>
+                </div>
+
+
+                <label for="inputapellido">Apellido</label>
+                <input type="text" id="Apellido" class="form-control" placeholder="primer apellido"
+                    formControlName="lastname" [ngClass]="{ 'is-invalid': submitted && f.lastname.errors }">
+                <div *ngIf="submitted && f.lastname.errors" class="invalid-feedback">
+                    <div *ngIf="f.lastname.errors.required">El apellido es requerido</div>
+                </div>
+
+                <label for="imputnombre">fecha de nacimiento </label>
+                <input type="date" id="nombre" placeholder="nombre" class="form-control" formControlName="birthday"
+                    [ngClass]="{ 'is-invalid': submitted && f. birthday.errors }">
+                <div *ngIf="submitted && f. birthday.errors" class="invalid-feedback">
+                    <div *ngIf="f. birthday.errors.required">La fecha de nacimiento es requerido</div>
+                </div>
+
+                <label for="exampleFormControlSelect1">seleccione genero</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Seleccione..</option>
+                    <option>femenino</option>
+                    <option>Masculino</option>
+                    <option>Prefiero no decir </option>
+                </select>
+                <label for="exampleFormControlSelect1">seleccione región </label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Seleccione..</option>
+                    <option>Tarapaca</option>
+                    <option>Antofagasta</option>
+                    <option>Atacama</option>
+                    <option>Coquimbo</option>
+                    <option>valparaíso</option>
+                    <option>Metro Politana</option>
+                    <option>O'higgins</option>
+                    <option>Maule</option>
+                    <option>Biobío</option>
+                    <option>Araucanía</option>
+                    <option>Los rios</option>
+                    <option>Los lagos</option>
+                    <option> Aysén</option>
+                    <option>Magallanes y Antártida</option>
+
+                </select>
+                <label for="inputapellido">Comuna</label>
+                <input type="text" id="comuna" class="form-control" placeholder="comuna" formControlName="commune"
+                    [ngClass]="{ 'is-invalid': submitted && f.commune.errors }">
+                <div *ngIf="submitted && f.commune.errors" class="invalid-feedback">
+                    <div *ngIf="f.commune.errors.required">La comuna es requerida</div>
+                </div>
+
+
+
+
+                <label form="inputcorreo">Correo</label>
+                <input type="Correos" class="form-control" id="correo" placeholder="nombre@example.com"
+                    formControlName=" email" [ngClass]="{ 'is-invalid': submitted && f. email.errors }">
+                <div *ngIf="submitted && f. email.errors" class="invalid-feedback"></div>
+                    <div *ngIf="f. email.errors.required"> el correo es requerido</div>
+                    <label for="exampleInputPassword1">contraseña</label>
+                    <input type="contraseña" class="form-control" id="exampleInputPassword1" placeholder="contraseña"
+                        formControlName="  password" [ngClass]="{ 'is-invalid': submitted && f. password.errors }">
+                    <div *ngIf="submitted && f. password.errors" class="invalid-feedback"></div>
+                        <div *ngIf="f. password.errors.required"> La contraseña es requerida</div>
+
+                        <label for="imput"></label>
+                        <br>
+                
+                        
+                        <button class="btn btn-primary">registrate </button>
+            </form>
+            
+
+        </div>
+    </div>
+</div>

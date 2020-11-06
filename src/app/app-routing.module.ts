@@ -7,6 +7,7 @@ import { RegistroComponent } from './registro/registro.component';
 import {DialogoComponent} from './dialogo/dialogo.component';
 import { DialogomensajeComponent } from './dialogomensaje/dialogomensaje.component';
 import { PerfilPublicComponent } from './perfil-public/perfil-public.component';
+import { SubidaComponent } from './subida/subida.component';
 
 
 
@@ -38,6 +39,10 @@ const routes: Routes = [
   {
     path: 'Perfil-public',
     component: PerfilPublicComponent
+  },
+  {
+    path: 'subida',
+    component: SubidaComponent
   }
   
   

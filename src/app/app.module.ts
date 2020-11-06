@@ -5,7 +5,7 @@ import {DialogOverviewExampleDialog} from './dialogo/dialogo.component'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {DialogoComponent} from './dialogo/dialogo.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 import { AppMaterialModule } from './app-material/app-material.module';
 
@@ -21,6 +21,8 @@ import {MatDialogModule} from "@angular/material/dialog";
 import { MatButtonModule,} from '@angular/material/button';
 import { DialogomensajeComponent, DialogOverviewExampleDialogo } from './dialogomensaje/dialogomensaje.component';
 import { PerfilPublicComponent } from './perfil-public/perfil-public.component';
+import { SubidaComponent } from './subida/subida.component';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -34,7 +36,8 @@ import { PerfilPublicComponent } from './perfil-public/perfil-public.component';
     DialogoComponent,
     DialogomensajeComponent,
     DialogOverviewExampleDialogo,
-    PerfilPublicComponent
+    PerfilPublicComponent,
+    SubidaComponent
    
     
   ],
@@ -47,7 +50,9 @@ import { PerfilPublicComponent } from './perfil-public/perfil-public.component';
     NgbModule,
     FormsModule,
     MatDialogModule,
-    MatButtonModule
+    MatButtonModule,
+    ReactiveFormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent],

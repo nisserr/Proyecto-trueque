@@ -1,3 +1,10 @@
 .datos{
     margin-left: 200px;
 }
+.container{
+    width: 500px;
+    margin: auto;
+    border: 3px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
