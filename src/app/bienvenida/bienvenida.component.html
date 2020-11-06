@@ -1,58 +1,83 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-      <h1 class="display-4">Bienvenido a ALMAJONI </h1>
-      <p class="lead">El mejor lugar para tus TRUEQUES</p>
+    <h1 class="display-4">Bienvenido a ALMAJONI</h1>
+    <p class="lead">El mejor lugar para tus TRUEQUES</p>
   </div>
 </div>
 
-<hr>
+<hr />
 
 <ngb-accordion #acc="ngbAccordion">
-    <ngb-panel id="toggle-1" title="Como trabajamos?">
-      <ng-template ngbPanelContent>
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
-        aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-        craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-        labore sustainable VHS.
-      </ng-template>
-    </ngb-panel>
-    <ngb-panel id="toggle-2" title="Normas de la comunidad">
-      <ng-template ngbPanelContent>
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
-        aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-        craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-        labore sustainable VHS.
-      </ng-template>
-    </ngb-panel>
-  </ngb-accordion>
-  
-  <hr/>
-<br>
+  <ngb-panel id="toggle-1" title="Como trabajamos?">
+    <ng-template ngbPanelContent>
+      Trabajamos de manera directa con el usuario, tratando un servicio al
+      cliente vía WhatsApp o al correo electrónico de nuestros ayudantes.
+      Nuestro sistema de trueque es verificado para que no se hagan cambios
+      ilegales y dañinos que impidan que nuestra comunidad sea segura, también
+      Nuestra empresa de trueque online garantiza la posibilidad de realizar
+      intercambios de manera segura y efectiva ya que los 2 usuarios se
+      comunicarán directamente vía chat. Nuestra empresa se rige por las normas
+      legales de la jurisdicción de la ley de Tarapacá n°12.998 No nos hacemos
+      responsables si sobre algún mal trato entre los usuarios, tampoco de si la
+      información es valida o no, no aceptamos reclamos si el cliente no se
+      siente satisfecho con su trueque Horarios de atención: 24 hrs
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel id="toggle-2" title="Normas de la comunidad">
+    <ng-template ngbPanelContent>
+      <ul>
+        <li> No se aceptaran falsificaciones de datos: nombres, dirección, producto,
+          etc.</li>
+        <li>Esta prohibido el mal uso de la atención al cliente, si no es respetado esto, se bloqueara la cuenta del usuario de manera indefinida vía ip.</li>
+        <li>Si hay una estafa entre transacciones de objetos, se llevara a cabo un juicio para llevar al culpable a la justicia</li>
+        <li> Debe haber respeto entre usuarios y ayudante, en caso de que esto no se cumpla se llevara a cabo el castigo correspondiente.</li>
+      </ul>
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
+
+<hr />
+<br />
 <h2>Preguntas frecuentes...</h2>
 <div class="datos">
-    <button type="button" class="btn btn-outline-secondary mr-2" placement="top"
-    ngbPopover="Publicar es totalmente gratis, nuestro negocio son los anuncios" popoverTitle="NOOO">
-Tengo que pagar?
-</button>
+  <button
+    type="button"
+    class="btn btn-outline-secondary mr-2"
+    placement="top"
+    ngbPopover="Publicar es totalmente gratis, nuestro negocio son los anuncios"
+    popoverTitle="NOOO"
+  >
+    Tengo que pagar?
+  </button>
 
-<button type="button" class="btn btn-outline-secondary mr-2" placement="right"
-    ngbPopover="Cualquier inconveniente con tu TRUEQUE comunicate a TRUEQUESALMAJOLI@gmail.com y nosotros te facilitaremos todo lo que necesites" popoverTitle="Tu seguridad es parte de nuestro trabajo">
-Es seguro?
-</button>
+  <button
+    type="button"
+    class="btn btn-outline-secondary mr-2"
+    placement="right"
+    ngbPopover="Cualquier inconveniente con tu TRUEQUE comunicate a TRUEQUESALMAJOLI@gmail.com y nosotros te facilitaremos todo lo que necesites"
+    popoverTitle="Tu seguridad es parte de nuestro trabajo"
+  >
+    Es seguro?
+  </button>
 
-<button type="button" class="btn btn-outline-secondary mr-2" placement="bottom"
-    ngbPopover="Nosotros recomendamos que todo sea presencial pero con nuestra realidad actual hemos realizado alianzas con distintas compañias para integrar la experiencia de envios en nuestra pagina" popoverTitle="No te preocupes!">
-Y los envios?
-</button>
+  <button
+    type="button"
+    class="btn btn-outline-secondary mr-2"
+    placement="bottom"
+    ngbPopover="Nosotros recomendamos que todo sea presencial pero con nuestra realidad actual hemos realizado alianzas con distintas compañias para integrar la experiencia de envios en nuestra pagina"
+    popoverTitle="No te preocupes!"
+  >
+    Y los envios?
+  </button>
 
-<button type="button" class="btn btn-outline-secondary mr-2" placement="left"
-    ngbPopover="Datos como tu rut y tu numero telefonico sera privado para nosotros pero el correo electronico se le facilitara a la persona que este interesada en tu producto" popoverTitle="Todo queda entre nosotros">
-Y mi datos?
-</button> 
+  <button
+    type="button"
+    class="btn btn-outline-secondary mr-2"
+    placement="left"
+    ngbPopover="Datos como tu rut y tu numero telefonico sera privado para nosotros pero el correo electronico se le facilitara a la persona que este interesada en tu producto"
+    popoverTitle="Todo queda entre nosotros"
+  >
+    Y mi datos?
+  </button>
 </div>
-<br><br><br>
- 
+<br /><br /><br />
