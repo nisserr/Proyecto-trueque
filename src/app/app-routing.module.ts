@@ -8,6 +8,7 @@ import {DialogoComponent} from './dialogo/dialogo.component';
 import { DialogomensajeComponent } from './dialogomensaje/dialogomensaje.component';
 import { PerfilPublicComponent } from './perfil-public/perfil-public.component';
 import { SubidaComponent } from './subida/subida.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -43,6 +44,10 @@ const routes: Routes = [
   {
     path: 'subida',
     component: SubidaComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   }
   
   

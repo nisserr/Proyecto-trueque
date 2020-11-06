@@ -1,0 +1,38 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">ALMAJONI</h1>
+        <p class="lead">el mejor lugar para cambiar tus productos.</p>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="card">
+        <h5 class="card-header">Iniciar Sesión</h5>
+        <div class="card-body">
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+                   
+          
+             
+
+
+
+                <label form="inputcorreo">Correo</label>
+                <input type="Correos" class="form-control" id="correo" placeholder="nombre@example.com"
+                    formControlName=" email" [ngClass]="{ 'is-invalid': submitted && f. email.errors }">
+                <div *ngIf="submitted && f. email.errors" class="invalid-feedback"></div>
+                    <div *ngIf="f. email.errors.required"> el correo es requerido</div>
+                    <label for="exampleInputPassword1">contraseña</label>
+                    <input type="contraseña" class="form-control" id="exampleInputPassword1" placeholder="contraseña"
+                        formControlName="  password" [ngClass]="{ 'is-invalid': submitted && f. password.errors }">
+                    <div *ngIf="submitted && f. password.errors" class="invalid-feedback"></div>
+                        <div *ngIf="f. password.errors.required"> La contraseña es requerida</div>
+
+                        <label for="imput"></label>
+                        <br>
+                
+                        
+                        <button class="btn btn-primary"> Inicia Sesión </button>
+            </form>

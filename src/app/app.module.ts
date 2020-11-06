@@ -23,6 +23,7 @@ import { DialogomensajeComponent, DialogOverviewExampleDialogo } from './dialogo
 import { PerfilPublicComponent } from './perfil-public/perfil-public.component';
 import { SubidaComponent } from './subida/subida.component';
 import { CommonModule } from '@angular/common';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { CommonModule } from '@angular/common';
     DialogomensajeComponent,
     DialogOverviewExampleDialogo,
     PerfilPublicComponent,
-    SubidaComponent
+    SubidaComponent,
+    LoginComponent
    
     
   ],
